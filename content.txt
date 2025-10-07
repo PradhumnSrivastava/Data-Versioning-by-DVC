@@ -6,3 +6,8 @@
 5. Now we do 'mkdir S3' (create a new S3 Directory)
 6. Now we will do 'dvc remote add -d myremote S3'.
 7. Next 'dvc add data/'
+ Now it will ask to do: ("git rm -r --cached 'data'" and git commit -m "Stop Tracking data")
+ because initially we were tracking it through git so now we have to remove it from git and handel it to dvc.
+ 8. Again we do "dvc add data/" (created data.dvc) then git add .gitignore data.dvc"
+ 9. Now "dvc commit" and "dvc  push"
+ 10. Now We will make changes in mycode.py and check change via "dvc status"
